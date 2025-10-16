@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TRUE FOREX — Forex & Stock Market Investments</title>
+  <meta name="description" content="TRUE FOREX: professional forex & stock market investing aimed at steady returns — education, signals, portfolio management, compliance, and transparency." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#ffffff;
+      --muted:#6b7280;
+      --text:#0f1724;
+      --accent:#0ea5a3;
+      --accent-600:#059e99;
+      --card:#f8fafc;
+      --glass: rgba(14,165,163,0.08);
+      --radius:14px;
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      --max-width:1100px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased}
+    .wrap{max-width:var(--max-width);margin:0 auto;padding:48px 24px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#6ee7b7);display:flex;align-items:center;justify-content:center;font-weight:700;color:#043033}
+    nav{display:flex;gap:20px;align-items:center}
+    nav a{color:var(--muted);text-decoration:none;font-weight:600}
+    .hero{display:grid;grid-template-columns:1fr 460px;gap:36px;align-items:center;margin-top:36px}
+    .kicker{display:inline-block;padding:6px 10px;border-radius:999px;background:var(--glass);color:var(--accent-600);font-weight:700;font-size:13px}
+    h1{font-size:40px;line-height:1.03;margin:12px 0}
+    p.lead{color:var(--muted);max-width:680px;margin:0 0 20px}
+    .actions{display:flex;gap:12px}
+    .btn{padding:12px 18px;border-radius:12px;border:none;font-weight:700;cursor:pointer}
+    .btn-primary{background:var(--accent);color:#042a29}
+    .btn-ghost{background:transparent;border:1px solid #e6eef2;color:var(--text)}
+    .card{background:var(--card);padding:20px;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,36,0.06)}
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px}
+    .feature{padding:18px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.6),rgba(255,255,255,0.5));border:1px solid rgba(14,165,163,0.06)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:22px}
+    section{margin-top:56px}
+    h2{margin:0 0 8px}
+    .muted{color:var(--muted)}
+    footer{margin-top:72px;padding:28px 0;border-top:1px solid #f1f5f9;color:var(--muted);font-size:14px}
+    input,select,textarea{width:100%;padding:10px;border-radius:10px;border:1px solid #e6eef2;background:transparent}
+    @media (max-width:980px){.hero{grid-template-columns:1fr}.features{grid-template-columns:1fr}.logo{width:48px;height:48px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">TF</div>
+        <div>
+          <div style="font-weight:800">TRUE FOREX</div>
+          <div style="font-size:13px;color:var(--muted);margin-top:2px">Forex & Stock Market Investments • Focused on returns</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#approach">Approach</a>
+        <a href="#education">Education</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <div>
+        <span class="kicker">Professional Investing</span>
+        <h1>Managed forex & stock strategies designed for steady returns</h1>
+        <p class="lead">TRUE FOREX blends systematic trading, fundamental research and active risk management to deliver long-term returns for investors. Choose managed portfolios, signal subscriptions, or learning tracks — all built to help you grow capital responsibly.</p>
+        <div class="actions">
+          <button class="btn btn-primary">Start Investing</button>
+          <button class="btn btn-ghost">View Education</button>
+        </div>
+
+        <div class="features">
+          <div class="feature">
+            <strong>Managed Portfolios</strong>
+            <div class="muted" style="margin-top:8px;font-size:13px">Custom portfolios for risk-profiled returns across forex & equities.</div>
+          </div>
+          <div class="feature">
+            <strong>Signal Subscription</strong>
+            <div class="muted" style="margin-top:8px;font-size:13px">Actionable forex & stock trade ideas with clear risk/return targets.</div>
+          </div>
+          <div class="feature">
+            <strong>Training & Mentorship</strong>
+            <div class="muted" style="margin-top:8px;font-size:13px">Courses and weekly sessions to build professional trading skills.</div>
+          </div>
+        </div>
+
+        <section style="margin-top:22px;display:flex;gap:12px;align-items:center">
+          <div class="muted">Estimated annual target ranges depend on strategy and risk — performance cannot be guaranteed.</div>
+        </section>
+      </div>
+
+      <aside class="card">
+        <h3 style="margin-top:0">Create your investor profile</h3>
+        <p class="muted" style="font-size:13px">Tell us about your goals and experience — we'll recommend the right plan.</p>
+        <form id="lead" onsubmit="submitLead(event)" style="margin-top:12px;display:grid;gap:10px">
+          <input name="name" placeholder="Full name" required />
+          <input name="email" type="email" placeholder="Email address" required />
+          <select name="goal" required>
+            <option value="">Primary goal</option>
+            <option>Capital growth</option>
+            <option>Income generation</option>
+            <option>Preservation & low volatility</option>
+          </select>
+          <select name="experience" required>
+            <option value="">Trading experience</option>
+            <option>Beginner</option>
+            <option>Intermediate</option>
+            <option>Experienced</option>
+          </select>
+          <div style="display:flex;gap:8px">
+            <button class="btn btn-primary" type="submit">Request Portfolio</button>
+            <button class="btn" type="button" onclick="window.location='#contact'">Contact</button>
+          </div>
+        </form>
+      </aside>
+    </main>
+
+    <section id="services">
+      <h2>Services</h2>
+      <div class="muted">Flexible options for investors and active traders.</div>
+      <div class="grid">
+        <div class="card">
+          <h4>Managed Forex Portfolio</h4>
+          <p class="muted">Diversified currency strategies managed by professionals — daily monitoring and risk controls.</p>
+        </div>
+        <div class="card">
+          <h4>Equity Investing</h4>
+          <p class="muted">Value and growth stock portfolios, sector rotation, and dividend-focused options.</p>
+        </div>
+        <div class="card">
+          <h4>Signals & Alerts</h4>
+          <p class="muted">Clear trade entries, stop-losses and profit targets delivered via app and email.</p>
+        </div>
+        <div class="card">
+          <h4>Education & Coaching</h4>
+          <p class="muted">On-demand courses, live workshops, and 1:1 mentorship for traders of all levels.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="approach">
+      <h2>Our approach</h2>
+      <div class="muted">A disciplined, research-driven process.</div>
+      <div class="grid">
+        <div class="card">
+          <strong>Research First</strong>
+          <p class="muted">Macro and micro analysis guides our trade selection and portfolio allocation.</p>
+        </div>
+        <div class="card">
+          <strong>Risk Management</strong>
+          <p class="muted">Position sizing and stop discipline protect capital and smooth returns.</p>
+        </div>
+        <div class="card">
+          <strong>Transparent Reporting</strong>
+          <p class="muted">Clients receive regular performance reports and trade rationales.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="muted">Learn to trade or level up your skills.</div>
+      <div class="grid">
+        <div class="card">
+          <strong>Trading Foundations</strong>
+          <p class="muted">Basics of markets, order types and risk controls.</p>
+        </div>
+        <div class="card">
+          <strong>Technical Strategies</strong>
+          <p class="muted">Charting, momentum, mean-reversion and implementation plans.</p>
+        </div>
+        <div class="card">
+          <strong>Portfolio Construction</strong>
+          <p class="muted">Asset allocation and rebalancing frameworks for steady returns.</p>
+        </div>
+        <div class="card">
+          <strong>Risk Psychology</strong>
+          <p class="muted">Mindset, discipline and emotional control to sustain performance.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing">
+      <h2>Pricing</h2>
+      <div class="muted">Choose the plan that fits your needs.</div>
+      <div class="grid">
+        <div class="card">
+          <h4>Starter Plan</h4>
+          <p class="muted">$49/month — Access to trading signals, email alerts, and basic education modules.</p>
+        </div>
+        <div class="card">
+          <h4>Investor Plan</h4>
+          <p class="muted">$199/month — Managed forex portfolio, equity research updates, and mentorship sessions.</p>
+        </div>
+        <div class="card">
+          <h4>Professional Plan</h4>
+          <p class="muted">$499/month — Full portfolio management, unlimited coaching, and priority reporting.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About TRUE FOREX</h2>
+      <p class="muted">Founded in 2020, TRUE FOREX is a registered investment services company specializing in forex and stock market strategies. Our mission is to make professional investing accessible to everyone. With a team of experienced analysts, traders, and mentors, we combine technology and research to help clients achieve sustainable growth.</p>
+      <div class="grid">
+        <div class="card">
+          <strong>Mission</strong>
+          <p class="muted">Empower investors through transparency, education, and responsible risk management.</p>
+        </div>
+        <div class="card">
+          <strong>Vision</strong>
+          <p class="muted">To become a trusted global leader in managed trading and investment education.</p>
+        </div>
+        <div class="card">
+          <strong>Values</strong>
+          <p class="muted">Integrity, discipline, transparency, and client-focused solutions.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="grid">
+        <div class="card">
+          <form onsubmit="submitContact(event)" style="display:grid;gap:10px">
+            <input name="fullname" placeholder="Full name" required />
+            <input name="email" type="email" placeholder="Email address" required />
+            <textarea name="message" rows="4" placeholder="How can we help?" required></textarea>
+            <div style="display:flex;gap:8px;align-items:center">
+              <button class="btn btn-primary" type="submit">Send message</button>
+              <div class="muted">Or email us directly: <strong style="color:var(--accent-600)">hello@trueforex.com</strong></div>
+            </div>
+          </form>
+        </div>
+        <div class="card">
+          <h4>Office</h4>
+          <p class="muted">TRUE FOREX — Registered investment services. Trading involves risk; returns are not guaranteed.</p>
+          <h4 style="margin-top:12px">Quick links</h4>
+          <ul style="margin:8px 0 0 18px;color:var(--muted)">
+            <li>Terms & Conditions</li>
+            <li>Privacy Policy</li>
+            <li>Risk Disclosure</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap">
+        <div>© <strong>TRUE FOREX</strong> <span id="year"></span></div>
+        <div class="muted">Designed with a focus on returns — Not investment advice.</div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    function submitLead(e){e.preventDefault();alert('Thanks — we\\'ll reach out soon (demo).');e.target.reset();}
+    function submitContact(e){e.preventDefault();alert('Message sent (demo).');e.target.reset();}
+  </script>
+</body>
+</html>
